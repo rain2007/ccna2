@@ -174,10 +174,10 @@ D1:
 config t
 router eigrp 100
  no auto-summary
- network 10.1.4.4 0.0.0.3
- network 10.2.1.0 0.0.0.255
- network 10.2.2.0 0.0.0.255
- network 192.168.1.128 0.0.0.31
+ no network 10.1.4.4 0.0.0.3
+ no network 10.2.1.0 0.0.0.255
+ no network 10.2.2.0 0.0.0.255
+ no network 192.168.1.128 0.0.0.31
 end
 
 or NEXUS-like
