@@ -92,6 +92,7 @@ Int Range fa0/10-12
  channel-protocol Lacp
  do sh etherchannel summary
  do sh int po1 | inc BW
+end
 
 
 !DHCP: DYNAMIC HOST CONFIGURATION PROTOCOL
