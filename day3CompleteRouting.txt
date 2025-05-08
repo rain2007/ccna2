@@ -152,6 +152,7 @@ config t
 ip route  192.168.1.128 255.255.255.224 10.2.1.2
 ip route  192.168.1.129 255.255.255.255 10.2.1.1
 do sh ip route static
+
 Pano mag static Route sa PC:
 cmd
 route  add 10.m.0.0 mask 255.255.0.0 10.m.1.4 -p
@@ -174,10 +175,10 @@ D1:
 config t
 router eigrp 100
  no auto-summary
- no network 10.1.4.4 0.0.0.3
- no network 10.2.1.0 0.0.0.255
- no network 10.2.2.0 0.0.0.255
- no network 192.168.1.128 0.0.0.31
+ network 10.1.4.4 0.0.0.3
+ network 10.2.1.0 0.0.0.255
+ network 10.2.2.0 0.0.0.255
+ network 192.168.1.128 0.0.0.31
 end
 
 or NEXUS-like
